@@ -4,6 +4,9 @@ __pycache__/
 *$py.class
 
 *.so
+*.bin
+*.model
+*.vocab
 
 # Distribution / packaging
 .Python

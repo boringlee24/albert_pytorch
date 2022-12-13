@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["--model_type=albert", 
+                    "--model_name_or_path=/work/li.baol/GIT/albert_pytorch/prev_trained_model/albert_base_v2", 
+                    "--task_name=SST-2", 
+                    "--do_eval", 
+                    "--do_lower_case",                     
+                    "--data_dir=/work/li.baol/GIT/albert_pytorch/dataset/SST-2", 
+                    "--max_seq_length=128", 
+                    "--per_gpu_eval_batch_size=8", 
+                    "--spm_model_file=/work/li.baol/GIT/albert_pytorch/prev_trained_model/albert_base_v2/30k-clean.model",
+                    "--output_dir=/work/li.baol/GIT/albert_pytorch/outputs/SST-2_output/",
+                    "--overwrite_output_dir",
+                    "--seed=42",
+                    "--logging_steps=4210"
+                ],
+            "cwd": "${fileDirname}"
+        }
+    ]
+}
